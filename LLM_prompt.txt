@@ -1,0 +1,41 @@
+You are a senior engineer writing a **README.md** for a teammate with very little experience hosting websites or using SSH. Provide crystal-clear, step-by-step instructions that let them replicate how to:
+
+1. Generate an ED25519 SSH key.
+2. Create a pico.sh account.
+3. Download static site files from a provided URL.
+4. Initialize a local project directory.
+5. Deploy the site via the pico.sh Pages CLI (`pgs`).
+6. Confirm the site is live at their own URL.
+
+Your **README.md** must include:
+
+- **Prerequisites**
+  - State that these steps assume **macOS or Linux**.
+  - Provide a link for Windows users to Microsoft’s SSH guide:
+    https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
+
+- **Step-by-Step Instructions**
+  - Numbered steps for tasks 1–6.
+  - Exact shell commands in fenced code blocks.
+  - Links to pico.sh docs:
+    - SSH key generation: https://pico.sh/faq#how-do-i-generate-an-ssh-key
+    - Account signup: https://pico.sh/getting-started
+    - Pages CLI: https://pico.sh/pgs
+  - A brief explanation under each code block explaining why that command or step is necessary.
+
+- **Live Demo**
+  - Show how to view *your* reference site by including this URL exactly:
+    ```
+    https://skazanakis-hosting-a-website-on-pico-sh.pgs.sh/index.html
+    ```
+  - Explain that after they deploy, their own site will be at:
+    ```
+    https://<YOUR_USERNAME>-<PROJECT_NAME>.pgs.sh
+    ```
+
+- **Troubleshooting**
+  - A short list of common errors (e.g., `Permission denied (publickey)`, `Invalid key format`) with one-line fixes for each.
+
+At the end, instruct them to replace `<YOUR_USERNAME>` and `<PROJECT_NAME>` with their own values and visit their unique URL to verify the deployment.
+
+Output **only** the completed **README.md** in Markdown format, ready for your teammate to follow.
